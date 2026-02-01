@@ -26,8 +26,8 @@ class Project {
         grades.add(sc.nextInt());
 
         int sum = 0;
-        for (int i = 0; i < grades.size(); i++) {
-            sum += grades.get(i);
+        for (Integer grade : grades) {
+            sum += grade;
         }
 
         double avg = (double) sum / grades.size();
